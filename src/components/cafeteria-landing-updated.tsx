@@ -9,7 +9,7 @@ const menuItems = [
   { id: 1, name: 'Espresso', category: 'cafeteria', image: '/img/espreso.jpg?height=300&width=400&text=Espresso' },
   { id: 2, name: 'Cappuccino', category: 'cafeteria', image: '/img/capuccino.jpg?height=300&width=400&text=Cappuccino' },
   { id: 3, name: 'Latte', category: 'cafeteria', image: '/img/latte.jpg?height=300&width=400&text=Latte' },
-  { id: 4, name: 'Croissant', category: 'comida', image: '/img/espreso.jpg?height=300&width=400&text=Croissant' },
+  { id: 4, name: 'Croissant', category: 'comida', image: '/img/croissant.jpg?height=300&width=400&text=Croissant' },
   { id: 5, name: 'Sandwich', category: 'comida', image: '/img/sandwich.jpeg?height=300&width=400&text=Sandwich' },
   { id: 6, name: 'Pastel', category: 'comida', image: '/img/pastel.jpeg?height=300&width=400&text=Pastel' },
 ]
