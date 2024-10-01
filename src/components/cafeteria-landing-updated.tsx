@@ -4,15 +4,14 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Coffee, Menu, X } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 const menuItems = [
-  { id: 1, name: 'Espresso', category: 'cafeteria', image: '/placeholder.svg?height=300&width=400&text=Espresso' },
-  { id: 2, name: 'Cappuccino', category: 'cafeteria', image: '/placeholder.svg?height=300&width=400&text=Cappuccino' },
-  { id: 3, name: 'Latte', category: 'cafeteria', image: '/placeholder.svg?height=300&width=400&text=Latte' },
-  { id: 4, name: 'Croissant', category: 'comida', image: '/placeholder.svg?height=300&width=400&text=Croissant' },
-  { id: 5, name: 'Sandwich', category: 'comida', image: '/placeholder.svg?height=300&width=400&text=Sandwich' },
-  { id: 6, name: 'Pastel', category: 'comida', image: '/placeholder.svg?height=300&width=400&text=Pastel' },
+  { id: 1, name: 'Espresso', category: 'cafeteria', image: '/img/espreso.jpg?height=300&width=400&text=Espresso' },
+  { id: 2, name: 'Cappuccino', category: 'cafeteria', image: '/img/capuccino.jpg?height=300&width=400&text=Cappuccino' },
+  { id: 3, name: 'Latte', category: 'cafeteria', image: '/img/latte.jpg?height=300&width=400&text=Latte' },
+  { id: 4, name: 'Croissant', category: 'comida', image: '/img/espreso.jpg?height=300&width=400&text=Croissant' },
+  { id: 5, name: 'Sandwich', category: 'comida', image: '/img/sandwich.jpeg?height=300&width=400&text=Sandwich' },
+  { id: 6, name: 'Pastel', category: 'comida', image: '/img/pastel.jpeg?height=300&width=400&text=Pastel' },
 ]
 
 export function CafeteriaLandingUpdated() {
@@ -36,7 +35,7 @@ export function CafeteriaLandingUpdated() {
   return (
     <div className="min-h-screen bg-amber-50">
       {/* Navbar */}
-      <nav className="bg-brown-900 text-white p-4 fixed w-full z-50">
+      <nav className="bg-brown-900 text-black p-4 fixed w-full z-50">
         <div className="container mx-auto flex justify-between items-center">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -75,13 +74,13 @@ export function CafeteriaLandingUpdated() {
         transition={{ duration: 1 }}
       >
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          src="/img/hero.jpg?height=1080&width=1920"
           alt="Café interior"
           layout="fill"
           objectFit="cover"
-          className="z-0"
+          className="z-0 blur-sm"
         />
-        <div className="z-10 text-center text-white">
+        <div className="z-10 text-center text-black">
           <motion.h1
             className="text-5xl font-bold mb-4"
             initial={{ y: -50 }}
@@ -174,7 +173,7 @@ export function CafeteriaLandingUpdated() {
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <Image
-              src="/placeholder.svg?height=600&width=800&text=Nuestra Historia"
+              src="/img/logo.png?height=600&width=800&text=Nuestra Historia"
               alt="Nuestra Historia"
               width={800}
               height={600}
@@ -189,13 +188,6 @@ export function CafeteriaLandingUpdated() {
             <p className="text-lg mb-4">
               Desde nuestros humildes comienzos, nos hemos dedicado a servir el mejor café y a crear momentos inolvidables para nuestros clientes.
             </p>
-            <motion.button
-              className="bg-brown-700 text-white px-6 py-2 rounded-full text-lg font-semibold hover:bg-brown-600 transition duration-300"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Conoce más
-            </motion.button>
           </div>
         </div>
       </motion.section>
@@ -211,14 +203,14 @@ export function CafeteriaLandingUpdated() {
               whileHover={{ scale: 1.05 }}
             >
               <h3 className="text-2xl font-semibold mb-2">Ubicación</h3>
-              <p>123 Calle del Café, Ciudad</p>
+              <p>Calle Entre Rios 167, San Clemente del Tuyú</p>
             </motion.div>
             <motion.div
               className="bg-white p-6 rounded-lg shadow-lg"
               whileHover={{ scale: 1.05 }}
             >
               <h3 className="text-2xl font-semibold mb-2">Teléfono</h3>
-              <p>+1 234 567 8900</p>
+              <p>11 45967485</p>
             </motion.div>
             <motion.div
               className="bg-white p-6 rounded-lg shadow-lg"
@@ -232,9 +224,9 @@ export function CafeteriaLandingUpdated() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-brown-900 text-white py-8">
+      <footer className="bg-brown-900 text-black py-8">
         <div className="container mx-auto text-center">
-          <p>&copy; 2024 Café Delicia. Todos los derechos reservados.</p>
+          <p>&copy; Cafe Delicia. Web desarrollada por la empresa Cefiro Technologies.</p>
         </div>
       </footer>
     </div>
